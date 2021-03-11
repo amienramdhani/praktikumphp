@@ -1,0 +1,8 @@
+amien DDP 80 90 100
+chaerul DDP 34 23 44
+chaerul DDP 34 23 44
+anisa BDI 67 87 97
+chaerul DDP 34 43 53
+samuel BDI 54 64 64
+amin BDI 89 90 99
+fathan BDI 78 89 99
