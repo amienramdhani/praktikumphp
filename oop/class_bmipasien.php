@@ -15,12 +15,22 @@ class Pasien
         $this->umur = $_umur;
         $this->jenis_kelamin = $jk;
     }
+    public function StatusBMI()
+    {
+        $jumlah =  $this->berat / ($this->tinggi / 100);
+        if ($jumlah < 18.5) {
+            return 'Kekurangan Berat Badan';
+        } elseif ($jumlah < 24.9) {
+            return 'Normal (ideal)';
+        } elseif ($jumlah < 29.9) {
+            return 'Kelebihan Berat Badan';
+        } elseif ($jumlah > 30) {
+            return 'Kegemukan(Obesitas)';
+        }
+    }
     public function hasilBMI()
     {
-        return $this->nama;
-        $this->berat;
-        $this->tinggi;
-        $this->umur;
-        $this->jenis_kelamin;
+        $jumlah =  $this->berat / ($this->tinggi / 100);
+        return $jumlah;
     }
 }

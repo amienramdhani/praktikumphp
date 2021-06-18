@@ -59,6 +59,8 @@ array_push($ar_pasien, $pasien);
                     <th scope="col">Tinggi Badan</th>
                     <th scope="col">Umur</th>
                     <th scope="col">Jenis Kelamin</th>
+                    <th scope="col">BMI</th>
+                    <th scope="col">Hasil</th>
                 </tr>
             </thead>
             <tbody>
@@ -73,6 +75,8 @@ array_push($ar_pasien, $pasien);
                         <td><?= $data->tinggi; ?></td>
                         <td><?= $data->umur; ?></td>
                         <td><?= $data->jenis_kelamin; ?></td>
+                        <td><?= $data->hasilBMI() ?></td>
+                        <td><?= $data->StatusBMI() ?></td>
                     </tr>
                 <?php
                 }
